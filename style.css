@@ -1,0 +1,119 @@
+:root{
+    --bd-color: hsl(216, 12%, 8%);
+    --buttons-color: hsl(211, 24%, 22%);
+    --container-color: hsl(213, 19%, 18%);
+    --text-in-buttons-color: hsl(216, 12%, 54%);
+    --button-hover-color: hsl(217, 12%, 63%);
+    --text-color:hsl(0, 0%, 100%);
+    --submit-color: hsl(25, 97%, 53%);
+}
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bd-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Overpass', sans-serif;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: var(--container-color);
+    border-radius: 10%;
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background-color: var(--buttons-color);
+    border-radius: 50%;
+    margin: 8% 0 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question{
+    width: 85%;
+    margin: 10% auto;
+}
+h1{
+    color:var(--text-color);
+    font-size: 36px;
+}
+.question p{
+    margin-top: 4%;
+    color: var(--text-in-buttons-color);
+    font-size: 15px;
+}
+.rating{
+    display: flex;
+    justify-content: space-around;
+}
+.container-subimt button,
+.rating button{
+    height: 50px;
+    border-style: none;
+    cursor: pointer;
+}
+.rate__buttons{
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--buttons-color);
+    color: var(--text-in-buttons-color);
+}
+.rate__buttons:hover{
+    background-color: var(--button-hover-color);
+    color: var(--text-color);
+}
+.rate__buttons:active{
+    background-color:var(--submit-color);
+}
+.container-subimt{
+    width: 100%;
+}
+.submit{
+    width: 90%;
+    color: var(--text-color);
+    border-radius: 25px;
+    background-color: var(--submit-color);
+    margin: 8% 5%;
+}
+.submit:active{
+    background-color: var(--text-color);
+    color: var(--submit-color);
+}
+.active{
+    background-color: var(--submit-color);
+    color: var(--text-color);
+}
+.ending{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.selection{
+    border-style: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    background-color: var(--buttons-color);
+    color: var(--submit-color);
+}
+.thanks{
+    font-size: 40px;
+    color: var(--text-color);
+    text-align: end;
+}
+.gb_text{
+    color:var(--text-in-buttons-color);
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
